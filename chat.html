@@ -20,6 +20,7 @@
         $("body").removeClass("preload");
       });
     </script>
+    
     <!-- Chat -->
     <style>
       .chat {
@@ -35,6 +36,17 @@
         }
       }
     </style>
+    <script type="text/javascript">
+      /* Randomize Name */
+      var names = [ "Kanye_West", "Batman", "Donald_Trump", "Eeyore", "Mike_Wazowski", "The_Teflon_Don", "Robocop", "Patrick_Star", "John_Fitzgerald_Kennedy", "Mr_Crabs", "Weegee", "Will_Ferrell", "Spoderman", "Stpephen", "Lonk_from_Pennsylvania", "Shy_Guy", "Mr_T", "Macklemore"];
+      function addChat() {
+        var rannum = Math.floor(Math.random() * names.length);
+        document.getElementById('Chat').innerHTML = "<iframe class=\"chat\" src=\"https://kiwiirc.com/client/irc.kiwiirc.com/?nick=" + names[rannum] + "|?&theme=basic#pcephtmlclub\"></iframe>";
+      }
+      onload = function() {
+        addChat();
+      }
+    </script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body class="preload">
@@ -49,7 +61,7 @@
       <h1>Chat</h1>
       <p>Talk up a storm!</p>
       <center>
-        <iframe class="chat" src="https://kiwiirc.com/client/irc.kiwiirc.com/?nick=Jan3ggers|?&theme=basic#pcephtmlclub"></iframe>
+        <div id="Chat"></div>
       </center>
     </div>
     <div class="icon"></div>
