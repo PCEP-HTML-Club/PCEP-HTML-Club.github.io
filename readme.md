@@ -1,3 +1,3 @@
-# [HTML Club Website](http://html.club16.org)
+# [HTML Club Website](https://pcephtml.github.io)
 
 Our webpage is the greatest thing since sliced bread.
